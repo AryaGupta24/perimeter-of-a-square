@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body {background-color: hsl(66, 100%, 90%);}
+            h1 {margin-left: 500px;}
+            h3 {margin-left: 450px;}
+            b {margin-left: 500px;}
+            button {color: rgb(12, 90, 2);margin-left: 500px;}
+        </style>
+        
+    </head>
+    <body>
+        <h1>Calculate your sum</h1>
+        <h3>The Formula: side * 4 = Perimeter of square</h3>
+        <h1 id = "answer"></h1>
+        <br>
+        <br>
+        <b>Num 1</b><input type = "enter your 1st no:" id= "num1">
+        <br>
+        <br>
+        <button onclick="calculate()">Calculate</button>
+
+        <script>
+            function calculate(){
+                var field1 = document.getElementById("num1").value;
+                var result= parseFloat(field1)*4;
+
+                if (!isNaN(result)){
+                    document.getElementById("answer").innerHTML="The answer is " + field1 +" * 4 = "+ result;
+                }
+            }
+        </script>
+
+        <img src="thank you.jpg" alt="thank you" width="140" height="103">
+    </body>
+</html>
+<!--<br>
+        <br>
+        <b>Num 2</b><input type = "enter your 2st no:" id= "num2">-->
